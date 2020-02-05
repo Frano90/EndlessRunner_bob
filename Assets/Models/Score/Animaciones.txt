@@ -1,0 +1,5 @@
+0 - 110 - Giro medusas
+0 - 100 - giro scoreboard
+0 - 110 - Giro completo medusas y scoreboard
+
+140 - 200 - Idle loop de las medusas
