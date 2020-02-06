@@ -4,11 +4,15 @@ using System;
 using System.IO;
 using System.Runtime.InteropServices;
 
-public class ShareScreenScript : MonoBehaviour {
+public class ShareScreenScript : MonoBehaviour
+{
 
     public static ShareScreenScript instance;
 
     //for android
+#if UNITY_ANDROID
+
+
     private bool isProcessing = false;
     public string message;
 
@@ -74,102 +78,115 @@ public class ShareScreenScript : MonoBehaviour {
         isProcessing = false;
 
     }// for android
+#endif
 
 
+#if UNITY_IOS
+	
 
-//        //for iOS
-//        public static event Action ScreenshotFinishedSaving;
-//        public static event Action ImageFinishedSaving;
-//
-//        public static string savedImagePath = string.Empty;
-//
-//    #if UNITY_IPHONE
-//
-//    	[DllImport("__Internal")]
-//    	private static extern bool saveToGallery (string path);
-//
-//    #endif
-//
-//        public static IEnumerator Save(string fileName, string albumName = "MyScreenshots", bool callback = false)
-//        {
-//    #if UNITY_IPHONE
-//
-//    		bool photoSaved = false;
-//
-//    		string date = System.DateTime.Now.ToString ("dd-MM-yy");
-//
-//    		ScreenshotHandler.ScreenShotNumber++;
-//
-//    		string screenshotFilename = fileName + "_" + ScreenshotHandler.ScreenShotNumber + "_" + date + ".png";
-//
-//    		Debug.Log ("Save screenshot " + screenshotFilename);
-//
-//
-//    		if (Application.platform == RuntimePlatform.IPhonePlayer) {
-//    			Debug.Log ("iOS platform detected");
-//
-//    			string iosPath = Application.persistentDataPath + "/" + fileName;
-//    			savedImagePath = iosPath;
-//    			ScreenCapture.CaptureScreenshot (screenshotFilename);
-//
-//    			while (!photoSaved) {
-//    				photoSaved = saveToGallery (iosPath);
-//
-//    				yield return new WaitForSeconds (.5f);
-//    			}				
-//
-//    			UnityEngine.iOS.Device.SetNoBackupFlag (iosPath);
-//
-//    		} else {
-//
-//    			ScreenCapture.CaptureScreenshot (screenshotFilename);
-//
-//    		}
-//
-//
-//    #endif
-//            yield return 0;
-//            if (callback)
-//                ScreenshotFinishedSaving();
-//        }
-//
-//
-//        public static IEnumerator SaveExisting(string filePath, bool callback = false)
-//        {
-//            yield return 0;
-//
-//            bool photoSaved = false;
-//
-//            Debug.Log("Save existing file to gallery " + filePath);
-//
-//    #if UNITY_IPHONE
-//
-//    		if (Application.platform == RuntimePlatform.IPhonePlayer) {
-//    			Debug.Log ("iOS platform detected");
-//
-//    			while (!photoSaved) {
-//    				photoSaved = saveToGallery (filePath);
-//
-//    				yield return new WaitForSeconds (.5f);
-//    			}
-//
-//    			UnityEngine.iOS.Device.SetNoBackupFlag (filePath);
-//    		}
-//
-//    #endif
-//
-//            if (callback)
-//                ImageFinishedSaving();
-//        }
-//
-//
-//        public static int ScreenShotNumber
-//        {
-//            set { PlayerPrefs.SetInt("screenShotNumber", value); }
-//
-//            get { return PlayerPrefs.GetInt("screenShotNumber"); }
-//        }
-//
-//        //for iOS
+        //for iOS
+        public static event Action ScreenshotFinishedSaving;
+        public static event Action ImageFinishedSaving;
+
+        public static string savedImagePath = string.Empty;
+
+        public void ShareScreenShot()
+        {
+	        StartCoroutine(Save("MyScreenShot"));
+        }
+
+#if UNITY_IPHONE
+
+    	[DllImport("__Internal")]
+    	private static extern bool saveToGallery (string path);
+
+#endif
+
+        public static IEnumerator Save(string fileName, string albumName = "MyScreenshots", bool callback = false)
+        {
+#if UNITY_IPHONE
+
+    		bool photoSaved = false;
+
+    		string date = System.DateTime.Now.ToString ("dd-MM-yy");
+
+    		ScreenShotNumber++;
+
+    		string screenshotFilename = "" + fileName + "" + ScreenShotNumber + "" + date + ".png";
+
+    		Debug.Log ("Save screenshot " + screenshotFilename);
+
+
+    		if (Application.platform == RuntimePlatform.IPhonePlayer) {
+    			Debug.Log ("iOS platform detected");
+
+    			string iosPath = Application.persistentDataPath + "/" + fileName;
+    			savedImagePath = iosPath;
+    			ScreenCapture.CaptureScreenshot (screenshotFilename);
+
+    			while (!photoSaved) {
+    				photoSaved = saveToGallery (iosPath);
+
+    				yield return new WaitForSeconds (.5f);
+    			}				
+
+    			UnityEngine.iOS.Device.SetNoBackupFlag (iosPath);
+
+    		} else {
+
+    			ScreenCapture.CaptureScreenshot (screenshotFilename);
+
+    		}
+
+
+#endif
+            yield return 0;
+            if (callback)
+                ScreenshotFinishedSaving();
+        }
+
+
+        public static IEnumerator SaveExisting(string filePath, bool callback = false)
+        {
+            yield return 0;
+
+            bool photoSaved = false;
+
+            Debug.Log("Save existing file to gallery " + filePath);
+
+#if UNITY_IPHONE
+
+    		if (Application.platform == RuntimePlatform.IPhonePlayer) {
+    			Debug.Log ("iOS platform detected");
+
+    			while (!photoSaved) {
+    				photoSaved = saveToGallery (filePath);
+
+    				yield return new WaitForSeconds (.5f);
+    			}
+
+    			UnityEngine.iOS.Device.SetNoBackupFlag (filePath);
+    		}
+
+#endif
+
+            if (callback)
+                ImageFinishedSaving();
+        }
+
+
+        public static int ScreenShotNumber
+        {
+            set { PlayerPrefs.SetInt("screenShotNumber", value); }
+
+            get { return PlayerPrefs.GetInt("screenShotNumber"); }
+        }
+
+        //for iOS
+#endif
 }
 
+//public class ScreenshotHandler
+//{
+//	public static int ScreenShotNumber = 0;
+//}
