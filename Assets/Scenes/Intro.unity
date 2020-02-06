@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -458,7 +458,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: ARScore
+          m_StringArgument: ARScoreDemo
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1178651895
@@ -762,6 +762,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1431888851}
     m_Modifications:
+    - target: {fileID: 2604703394323005006, guid: 8f4e54a865686434491f15b9fbdaccdb,
+        type: 3}
+      propertyPath: amountOfPreCreatedObjects
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2604703394323005007, guid: 8f4e54a865686434491f15b9fbdaccdb,
         type: 3}
       propertyPath: m_Name
@@ -1268,25 +1273,18 @@ PrefabInstance:
     - target: {fileID: 4577240578564869217, guid: 7c3e84add283241838f0274c8c999ed7,
         type: 3}
       propertyPath: prefabs.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4577240578564869217, guid: 7c3e84add283241838f0274c8c999ed7,
         type: 3}
-      propertyPath: prefabs.Array.data[1]
-      value: 
-      objectReference: {fileID: 3899635512815262137, guid: 9da03dbbe768e4992952630ce4e67d48,
-        type: 3}
+      propertyPath: amountOfPreCreatedObjects
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4577240578564869217, guid: 7c3e84add283241838f0274c8c999ed7,
         type: 3}
-      propertyPath: prefabs.Array.data[2]
+      propertyPath: prefabs.Array.data[4]
       value: 
-      objectReference: {fileID: 3899635512815262137, guid: bd5a2c4f45e9a4c2e9d90bb6a249a4eb,
-        type: 3}
-    - target: {fileID: 4577240578564869217, guid: 7c3e84add283241838f0274c8c999ed7,
-        type: 3}
-      propertyPath: prefabs.Array.data[3]
-      value: 
-      objectReference: {fileID: 3899635512815262137, guid: da770ba63b96e487db96ddf4e48b211d,
+      objectReference: {fileID: 3899635512815262137, guid: c6cb09592b0514710900bdcdb9af3fb5,
         type: 3}
     - target: {fileID: 4577240578564869218, guid: 7c3e84add283241838f0274c8c999ed7,
         type: 3}

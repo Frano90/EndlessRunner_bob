@@ -16,7 +16,7 @@ public class Score_UI : MonoBehaviour
     private void AddScore()
     {
         scoreAmount++;
-        score.text = scoreAmount.ToString();
+        score.text = " x " + scoreAmount;
     }
 
    

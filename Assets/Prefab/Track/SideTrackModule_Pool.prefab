@@ -45,6 +45,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabs:
   - {fileID: 3899635512815262137, guid: cb52fe9c55f8f4f2ebafca56d06bae2e, type: 3}
+  - {fileID: 3899635512815262137, guid: 9da03dbbe768e4992952630ce4e67d48, type: 3}
+  - {fileID: 3899635512815262137, guid: bd5a2c4f45e9a4c2e9d90bb6a249a4eb, type: 3}
+  - {fileID: 3899635512815262137, guid: da770ba63b96e487db96ddf4e48b211d, type: 3}
   amountOfPreCreatedObjects: 4
   OnFinishPreWarmPool: {fileID: 11400000, guid: 42ed838b9138247b5845eb11562c5bd3,
     type: 2}

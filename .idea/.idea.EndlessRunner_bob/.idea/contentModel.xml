@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/Library/Caches/Rider2019.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.2/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_EndlessRunner_bob.2102227296.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="CosasQueVenianConUnity" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="SimpleCameraController.cs" t="Include" />
+          </e>
+          <e p="TutorialInfo" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Editor" t="Include">
+                <e p="ReadmeEditor.cs" t="Include" />
+              </e>
+              <e p="Readme.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Models" t="Include">
+          <e p="Score" t="Include">
+            <e p="Animaciones.txt" t="Include" />
+          </e>
+        </e>
+        <e p="Plugins" t="Include">
+          <e p="NativeShare" t="Include">
+            <e p="Editor" t="Include">
+              <e p="NSPostProcessBuild.cs" t="Include" />
+            </e>
+            <e p="NativeShare.cs" t="Include" />
+            <e p="Readme.txt" t="Include" />
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="AR" t="Include">
+            <e p="ScoreAnimation_handler.cs" t="Include" />
+            <e p="TapInput_AR.cs" t="Include" />
+          </e>
+          <e p="Collectables" t="Include">
+            <e p="Coin.cs" t="Include" />
+          </e>
+          <e p="GenericPool" t="Include">
+            <e p="GenericObjectPool.cs" t="Include" />
+            <e p="GenericPoolWithMultipleObjects.cs" t="Include" />
+          </e>
+          <e p="Player" t="Include">
+            <e p="Animation_handler.cs" t="Include" />
+            <e p="CheerMeter_handler.cs" t="Include" />
+            <e p="Entity.cs" t="Include" />
+            <e p="EntityConfig.cs" t="Include" />
+            <e p="EntityMovement.cs" t="Include" />
+            <e p="PlayerController.cs" t="Include" />
+            <e p="PlayerInput.cs" t="Include" />
+            <e p="Speed_handler.cs" t="Include" />
+            <e p="SwipeDetector.cs" t="Include" />
+            <e p="TapDetector.cs" t="Include" />
+          </e>
+          <e p="Track" t="Include">
+            <e p="BlockTrackBuilder.cs" t="Include" />
+            <e p="EndSideTrack_trigger.cs" t="Include" />
+            <e p="EndTrack_Trigger.cs" t="Include" />
+            <e p="ITrackModuleQueuePool.cs" t="Include" />
+            <e p="Obstacles" t="Include">
+              <e p="Obstacle.cs" t="Include" />
+              <e p="TrackElement.cs" t="Include" />
+            </e>
+            <e p="ReturnSideTrack_trigger.cs" t="Include" />
+            <e p="ReturnTrack_Trigger.cs" t="Include" />
+            <e p="SideTrack_Module.cs" t="Include" />
+            <e p="SideTrackModule_Pool.cs" t="Include" />
+            <e p="SideTrackPositioning_controller.cs" t="Include" />
+            <e p="TrackModule.cs" t="Include" />
+            <e p="TrackModule_config.cs" t="Include" />
+            <e p="TrackObject.cs" t="Include" />
+            <e p="TrackPool.cs" t="Include" />
+            <e p="TrackPools_handler.cs" t="Include" />
+            <e p="TrackPositioning_Controller.cs" t="Include" />
+            <e p="TurnOnTrackElements.cs" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="CheerMeter_UI.cs" t="Include" />
+            <e p="Score_UI.cs" t="Include" />
+          </e>
+          <e p="Utilities" t="Include">
+            <e p="GameEvent.cs" t="Include" />
+            <e p="GameEventListener.cs" t="Include" />
+            <e p="LoadGameScene.cs" t="Include" />
+            <e p="PersistThroughSceneChange.cs" t="Include" />
+            <e p="ScreenShot.cs" t="Include" />
+            <e p="ScreenShot_bis.cs" t="Include" />
+            <e p="ScreenShotShare.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="EndlessRunner_bob.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp/bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
