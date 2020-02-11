@@ -106,6 +106,7 @@
             <e p="LoadGameScene.cs" t="Include" />
             <e p="PersistThroughSceneChange.cs" t="Include" />
             <e p="ScreenChot.cs" t="Include" />
+            <e p="SettingBalance_handler.cs" t="Include" />
             <e p="Skybox_handler.cs" t="Include" />
           </e>
         </e>

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4c35f7e10ced48bb8223211c3832ec3, type: 3}
-  m_Name: PlayerConfig
+  m_Name: PlayerConfig_BASE
   m_EditorClassIdentifier: 
   cheerMeterRange: {x: 0, y: 30, z: 80, w: 100}
   topSpeed: 15
