@@ -17,8 +17,8 @@ MonoBehaviour:
   aceleration: 0.2
   decelerate: 0.1
   reactionTime: 0
-  constantMinusCheer: 5
-  minusCheerTimeInterval: 2
+  constantMinusCheer: 0.5
+  minusCheerTimeInterval: 0.3
   constantAddCheerAmount: 20
   overExitedTime: 5
   overExcitedTopSpeed: 20

@@ -8,7 +8,7 @@ using UnityEditor.iOS.Xcode;
 
 public class NSPostProcessBuild 
 {
-	private const bool ENABLED = false;
+	private const bool ENABLED = true;
 	private const string PHOTO_LIBRARY_USAGE_DESCRIPTION = "Save media to Photos";
 
 	[InitializeOnLoadMethod]

@@ -12,4 +12,5 @@ public class TrackModule_config : ScriptableObject
     }
 
     public float speed;
+    public float upSpeed;
 }

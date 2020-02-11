@@ -139,6 +139,7 @@ GameObject:
   - component: {fileID: 6738780760207634414}
   - component: {fileID: 6738780760207634413}
   - component: {fileID: 6738780760207634412}
+  - component: {fileID: 778811636}
   m_Layer: 0
   m_Name: PlayerController
   m_TagString: Untagged
@@ -217,6 +218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _trackModuleConfig: {fileID: 11400000, guid: 81575093096c94cbab374a3032a36826, type: 2}
   _entityConfig: {fileID: 11400000, guid: ad8fe00766ba748efa4fee36f989125f, type: 2}
+  _addTimeToOverExcited: 3
 --- !u!114 &6738780760207634414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -257,3 +259,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcbc4f78259b5498dba3f07d73d11296, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &778811636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6738780760207634388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fb1f721802ac4fc28712f86060fd63a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _trail_PS: {fileID: 0}
+  _trackModuleConfig: {fileID: 11400000, guid: 81575093096c94cbab374a3032a36826, type: 2}
+  _playerConfig: {fileID: 11400000, guid: ad8fe00766ba748efa4fee36f989125f, type: 2}

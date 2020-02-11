@@ -19,11 +19,11 @@ public class ScreenChot : MonoBehaviour
         ss.Apply();
 
         string filePath = Path.Combine(Application.temporaryCachePath, "shared img.png");
-        File.WriteAllBytes(filePath, ss.EncodeToPNG());
+        File.WriteAllBytes(filePath, ss.EncodeToJPG());
 
         // To avoid memory leaks
         Destroy(ss);
 
-        new NativeShare().AddFile(filePath).SetSubject("Subject goes here").SetText("Hello world!").Share();
+        new NativeShare().AddFile(filePath).Share();
     }
 }

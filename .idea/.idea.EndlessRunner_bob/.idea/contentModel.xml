@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="$USER_HOME$/Library/Caches/Rider2019.2/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/Rider2019.2/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_EndlessRunner_bob.2102227296.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.2/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_EndlessRunner_bob.1872123142.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
@@ -22,12 +22,22 @@
             </e>
           </e>
         </e>
+        <e p="MobileConsole" t="Include">
+          <e p="Readme.txt" t="Include" />
+          <e p="Scripts" t="Include">
+            <e p="MobileConsole.cs" t="Include" />
+            <e p="Style.cs" t="Include" />
+          </e>
+        </e>
         <e p="Models" t="Include">
           <e p="Score" t="Include">
             <e p="Animaciones.txt" t="Include" />
           </e>
         </e>
         <e p="Plugins" t="Include">
+          <e p="Android" t="Include">
+            <e p="UnityManifest.xml" t="Include" />
+          </e>
           <e p="NativeShare" t="Include">
             <e p="Editor" t="Include">
               <e p="NSPostProcessBuild.cs" t="Include" />
@@ -56,6 +66,7 @@
             <e p="EntityMovement.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
             <e p="PlayerInput.cs" t="Include" />
+            <e p="PlayerParticle_handler.cs" t="Include" />
             <e p="Speed_handler.cs" t="Include" />
             <e p="SwipeDetector.cs" t="Include" />
             <e p="TapDetector.cs" t="Include" />
@@ -71,6 +82,7 @@
             </e>
             <e p="ReturnSideTrack_trigger.cs" t="Include" />
             <e p="ReturnTrack_Trigger.cs" t="Include" />
+            <e p="SetHorizon_controller.cs" t="Include" />
             <e p="SideTrack_Module.cs" t="Include" />
             <e p="SideTrackModule_Pool.cs" t="Include" />
             <e p="SideTrackPositioning_controller.cs" t="Include" />
@@ -81,19 +93,20 @@
             <e p="TrackPools_handler.cs" t="Include" />
             <e p="TrackPositioning_Controller.cs" t="Include" />
             <e p="TurnOnTrackElements.cs" t="Include" />
+            <e p="UpToHorizon_Trigger.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
             <e p="CheerMeter_UI.cs" t="Include" />
             <e p="Score_UI.cs" t="Include" />
           </e>
           <e p="Utilities" t="Include">
+            <e p="CameraSpeedSimulation.cs" t="Include" />
             <e p="GameEvent.cs" t="Include" />
             <e p="GameEventListener.cs" t="Include" />
             <e p="LoadGameScene.cs" t="Include" />
             <e p="PersistThroughSceneChange.cs" t="Include" />
-            <e p="ScreenShot.cs" t="Include" />
-            <e p="ScreenShot_bis.cs" t="Include" />
-            <e p="ScreenShotShare.cs" t="Include" />
+            <e p="ScreenChot.cs" t="Include" />
+            <e p="Skybox_handler.cs" t="Include" />
           </e>
         </e>
       </e>

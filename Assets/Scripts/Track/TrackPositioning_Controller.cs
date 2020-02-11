@@ -21,7 +21,7 @@ public class TrackPositioning_Controller : MonoBehaviour
     {
         MeshRenderer lastModuleRender = lastModule.GetComponentInChildren<MeshRenderer>();
         var newTrackModule = TrackPool.Instance.Get(GetRandomIndexToPickTrackModule());
-        newTrackModule.transform.position = new Vector3(0  ,lastModuleRender.bounds.max.y,lastModuleRender.bounds.max.z -0.5f);
+        newTrackModule.transform.position = new Vector3(0  ,-10,  lastModuleRender.bounds.max.z -0.5f);//lastModuleRender.bounds.max.y,lastModuleRender.bounds.max.z -0.5f);
     }
 
     /// <summary>

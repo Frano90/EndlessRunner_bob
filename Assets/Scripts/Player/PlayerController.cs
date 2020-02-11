@@ -49,9 +49,8 @@ public class PlayerController : MonoBehaviour
       _playerInput = GetComponent<PlayerInput>();
       _cheerMeterHandler = GetComponent<CheerMeter_handler>();
       _animationHandler = GetComponent<Animation_handler>();
-      
-      
-      
+
+
    }
    
    /// <summary>

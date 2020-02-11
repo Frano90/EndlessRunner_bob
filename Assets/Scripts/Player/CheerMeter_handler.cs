@@ -8,9 +8,11 @@ public class CheerMeter_handler : MonoBehaviour
     public float CurrentCheer { get; private set; }
     public CheerStatus _currentCheerStatus {get; private set; }
     [SerializeField] private EntityConfig _entityConfig;
-    
-    
+
+
     private float _timeCount = 0;
+
+
 
     public void AddCheer()
     {

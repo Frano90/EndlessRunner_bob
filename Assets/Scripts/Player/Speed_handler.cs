@@ -8,11 +8,13 @@ public class Speed_handler : MonoBehaviour
     [SerializeField] private TrackModule_config _trackModuleConfig;
     [SerializeField] private EntityConfig _entityConfig;
     private CheerMeter_handler _cheerMeterHandler;
+    [SerializeField] private float _addTimeToOverExcited;
 
     private float _timeCount;
 
     private void Start()
     {
+        Coin.OnGetCoin += MaintainOverExcitedState;
         _cheerMeterHandler = GetComponent<CheerMeter_handler>();
     }
 
@@ -89,6 +91,14 @@ public class Speed_handler : MonoBehaviour
     private void ResetTimerForOverExcited()
     {
         _timeCount = 0;
+    }
+    
+    private void MaintainOverExcitedState()
+    {
+        _timeCount -= _addTimeToOverExcited;
+
+        if (_timeCount < 0)
+            _timeCount = 0;
     }
 
     
